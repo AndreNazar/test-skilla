@@ -1,0 +1,16 @@
+@use '../../app/styles/variables' as *;
+
+.call_table{
+    width: 1440px;
+    background-color: $color-main;
+    border-radius: 10px;
+    padding: 1em 0;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: calc(100vh - 4em);
+    &__list{
+        display: grid;
+        padding: 0;
+        margin: 0;
+    }
+}

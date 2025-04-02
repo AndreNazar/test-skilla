@@ -1,0 +1,32 @@
+@use '../app/styles/variables' as *;
+
+.button__audio{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    min-width: 25px;
+    box-sizing: border-box;
+    height: 25px;
+    background-color: $color-main;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.download,
+.delete{
+    background-color: transparent;
+    border: none;
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    path{
+        transition: fill .2s;
+    }
+    &:hover path{
+        fill: $button-hover;
+    }
+}

@@ -1,0 +1,41 @@
+@use 'variables' as *;
+@use 'fonts' as *;
+
+:root {
+  font-family: "SF-Pro-Display-Regular";
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: $background-primary;
+  color: $color-primary;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.app_container{
+  display: flex;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  justify-items: center;
+  justify-content: center;
+}
+
+
