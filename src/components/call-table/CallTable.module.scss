@@ -9,6 +9,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     min-height: calc(100vh - 4em);
     &__list{
+        position: relative;
         display: grid;
         padding: 0;
         margin: 0;

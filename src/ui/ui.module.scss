@@ -30,3 +30,21 @@
         fill: $button-hover;
     }
 }
+
+.arrow_change{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    path{
+        transition: fill .2s;
+    }
+    &:hover path{
+        fill: $button-hover;
+    }
+}
+
+.loading{
+    position: absolute;
+    left: 50%;
+    top: 50px;
+}

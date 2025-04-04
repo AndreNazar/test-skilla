@@ -1,17 +1,11 @@
-import { createContext, useCallback, useMemo, useState } from "react"
+import { useCallback, useMemo, useState } from "react"
 import { IItems } from "../../types/global"
 import { eFilterHeadings } from "../../types/enums"
+import { HeaderContext } from "../contexts"
 
 interface HeaderProviderProps {
   children: React.ReactNode
 }
-
-interface HeaderContextType {
-  items: IItems[]
-  updateFilter: (id: number, filter: eFilterHeadings) => void
-}
-
-export const HeaderContext = createContext<HeaderContextType | null>(null)
 
 export const HeaderProvider = ({ children }: HeaderProviderProps) => {
   const initialItems: IItems[] = [

@@ -1,4 +1,4 @@
-import { useHeader } from "../../../hooks/useHeader"
+import { useHeader } from "../../../hooks"
 import styles from "./TableRow.module.scss"
 import ItemHeader from "./header-components/ItemHeader"
 

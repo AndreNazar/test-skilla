@@ -1,4 +1,44 @@
+@use '../../app/styles/variables' as *;
+
+p{
+    margin: 0;
+}
+
 .header_control{
+    position: relative;
     display: flex;
     justify-content: space-between;
+    padding: 2em 0;
+    p{
+        color: $text-header;
+        font-size: 14px;
+    }
+}
+
+.filter_by_type{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    cursor: pointer;
+}
+
+.filter_by_date{
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    &__select{
+        display: flex;
+        gap: .5em;
+        cursor: pointer;
+        &:hover path{
+            fill: $button-hover;
+        }
+        path{
+            transition: fill .2s;
+        }
+        .select_text{
+            transition: color .2s;
+            color: $button-hover;
+        }
+    }
 }
